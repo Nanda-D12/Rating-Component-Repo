@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  /* Positioning to center */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Sizing the card */
+  max-width: 350px;
+  width: 85vw !important;
+  border-radius: 1.5rem;
+
+  /* Color */
+  background: linear-gradient(hsl(213, 19%, 18%), hsl(213, 19%, 12%));
+
+  /* Placing the container to center */
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  color: hsl(0, 0%, 100%);
+  padding: 2rem;
+}
+
+.star {
+  /* Sizing and structuring */
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+
+  /* Color */
+  background-color: hsl(216, 12%, 25%);
+
+  /* Placing the star svg to center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 1.5rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.option {
+  /* Sizing and structuring */
+  list-style: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+
+  /* Color */
+  background-color: hsl(216, 12%, 25%);
+  color: hsl(217, 12%, 63%);
+
+  /* Placing the context to center */
+  display: grid;
+  place-items: center;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.option--selected {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn {
+  /* Sizing and structuring */
+  display: inline-block;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 100px;
+
+  /* Color */
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+
+  /* Placing text to center */
+  display: grid;
+  place-items: center;
+
+  /* Typography */
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.selection {
+  /* Sizing and Structuring */
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 100px;
+
+  /* Color */
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(216, 12%, 20%);
+
+  font-size: 15px;
+}
